@@ -22,5 +22,11 @@ Configure::write('Bake.theme', 'AppClassBaker');
 ### 2. Run bake command to create AppEntity/AppTable file
 
 ```
-bin/cake bake app
+bin/cake bake app_model
+```
+
+### 3. Run bake command to create Entity/Table file (As usual!)
+
+```
+bin/cake bake model articles
 ```
