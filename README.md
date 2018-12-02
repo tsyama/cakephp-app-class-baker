@@ -7,5 +7,20 @@ You can install this plugin into your CakePHP application using [composer](http:
 The recommended way to install composer packages is:
 
 ```
-composer require your-name-here/AppClassBaker
+composer require tsyama/cakephp-app-class-baker --dev
+```
+
+## Usage
+
+### 1. Add to config/bootstrap.php
+
+```php
+Plugin::load('AppClassBaker', ['bootstrap' => false, 'routes' => true]);
+Configure::write('Bake.theme', 'AppClassBaker');
+```
+
+### 2. Run bake command to create AppEntity/AppTable file
+
+```
+bin/cake bake app
 ```
